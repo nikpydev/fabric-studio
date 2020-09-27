@@ -24,14 +24,14 @@ const App = ({ checkUserSession, currentUser }) => {
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/shop' component={ShopPage} />
-        <Route exact path='/checkout' component={CheckoutPage} />
+        <Route exact path='/fabric-studio' component={HomePage} />
+        <Route path='/fabric-studio/shop' component={ShopPage} />
+        <Route exact path='/fabric-studio/checkout' component={CheckoutPage} />
         <Route
           exact
-          path='/signin'
+          path='/fabric-studio/signin'
           render={() =>
-            currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />
+            currentUser ? <Redirect to='/fabric-studio' /> : <SignInAndSignUpPage />
           }
         />
       </Switch>

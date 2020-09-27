@@ -19,18 +19,18 @@ import {
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
-    <LogoContainer to='/'>
+    <LogoContainer to='/fabric-studio/'>
       <Logo className='logo' />
     </LogoContainer>
     <OptionsContainer>
-      <OptionLink to='/shop'>SHOP</OptionLink>
-      <OptionLink to='/shop'>CONTACT</OptionLink>
+      <OptionLink to='/fabric-studio/shop/'>SHOP</OptionLink>
+      <OptionLink to='/fabric-studio/shop/'>CONTACT</OptionLink>
       {currentUser ? (
         <OptionLink as='div' onClick={signOutStart}>
           SIGN OUT
         </OptionLink>
       ) : (
-        <OptionLink to='/signin'>SIGN IN</OptionLink>
+        <OptionLink to='/fabric-studio/signin/'>SIGN IN</OptionLink>
       )}
       <CartIcon />
     </OptionsContainer>
