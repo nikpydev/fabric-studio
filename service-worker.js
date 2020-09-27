@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fabric-studio/precache-manifest.94e22f1c9b0255cff0fe6093d26adf9d.js"
+  "/fabric-studio/precache-manifest.a22f8ae6ddb43ec8d23ef7ec22b385db.js"
 );
 
 self.addEventListener('message', (event) => {
